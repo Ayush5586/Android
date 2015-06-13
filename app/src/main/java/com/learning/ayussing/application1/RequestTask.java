@@ -30,6 +30,7 @@ class RequestTask extends AsyncTask<String, String, String> {
     @Override
     protected String doInBackground(String... uri) {
         HttpClient httpclient = new DefaultHttpClient();
+        int a = 0;
         HttpResponse response;
         StringBuilder responseString = new StringBuilder();
         try {
